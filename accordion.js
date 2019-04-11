@@ -24,7 +24,10 @@ for (i = 0; i < acc.length; i++) {
       } else {
         if(panels[j].style.maxHeight) {
           panels[j].style.maxHeight = null;
+          tab[0].style.visibility = 'visible';
         } else {
+          tab[0].style.visibility = 'hidden';
+
           if(container.offsetTop) {
             panels[j].style.maxHeight = container.offsetTop + "px";
           } else {

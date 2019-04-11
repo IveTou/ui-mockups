@@ -32,7 +32,12 @@
   background-color: white;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-out;
+  transition: max-height .2s ease-out;
+  overflow: auto;
+}
+
+.panel::-webkit-scrollbar {
+  display: none;
 }
 
 .panel-content {
