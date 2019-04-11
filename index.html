@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="tab.css">
+<link rel="stylesheet" type="text/css" href="accordion.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="panel" id="veiculo">
+    <div class="panel-content">
+      <h4>1 - Panel</h4>
+      <p>Lorem ipsum dolor sit amet, cons</p>
+    </div>
+  </div>
+
+  <div class="panel" id="pagamento">
+    <div class="panel-content">
+      <h4>2 - Panel</h4>
+      <p>Lorem ipsum dolor sit amet, cons</p>
+    </div>
+  </div>
+
+  <div class="panel" id="mais">
+    <div class="panel-content">
+      <h4>3 - Panel</h4>
+      <p>Lorem ipsum dolor sit amet, cons</p>
+    </div>
+  </div>
+
+  <div class="panel" id="codigo">
+    <div class="panel-content">
+      <h4>4 - Panel</h4>
+      <p>Lorem ipsum dolor sit amet, cons</p>
+    </div>
+  </div>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'automovel')" id="defaultOpen">Automóvel</button>
+    <button class="tablinks" onclick="openCity(event, 'utilitario')">Utilitário</button>
+  </div>
+
+  <div id="automovel" class="tabcontent">
+    <button class="accordion" id="veiculo">Básico</button>
+    <button class="accordion" id="pagamento">Dinheiro</button>
+    <button class="accordion" id="mais">Mais opções</button>
+    <button class="accordion" id="codigo">Código motorista</button>
+  </div>
+
+  <div id="utilitario" class="tabcontent">
+    <h3>Coisas do utilitário</h3>
+    <p>...</p> 
+  </div>
+</div>
+
+<script src="tab.js"></script>
+<script src="accordion.js"></script>   
+</body>
+</html> 
