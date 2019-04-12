@@ -13,6 +13,7 @@
 
 .accordion i, span {
   margin-right: 8px;
+  vertical-align: middle;
 }
 
 .active, .accordion:hover {
@@ -36,7 +37,7 @@
   background-color: white;
   max-height: 0;
   transition: max-height .2s ease-out;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .panel::-webkit-scrollbar {
@@ -46,4 +47,12 @@
 .panel-content {
   /*height: 445px;*/
   max-height: 100%;
+  height: -webkit-fill-available;
+  max-height: 100%;
+  overflow: auto;
+  color: grey;
+}
+
+.panel-content::-webkit-scrollbar { 
+  display: none; 
 }
