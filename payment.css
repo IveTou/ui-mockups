@@ -1,0 +1,10 @@
+
+.panel.pagamento >button {
+  width: 100%;
+  margin: 16px 0;
+  border: none;
+  background: black;
+  font-size: 18px;
+  color: white;
+  padding: 8px;
+  }
