@@ -1,4 +1,3 @@
-
 .panel.pagamento >button {
   width: 100%;
   margin: 16px 0;
@@ -7,4 +6,8 @@
   font-size: 18px;
   color: white;
   padding: 8px;
-  }
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}

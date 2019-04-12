@@ -41,5 +41,6 @@
 }
 
 .panel-content {
-  height: 582px;/**/
+  /*height: 445px;*/
+  max-height: 100%;
 }
