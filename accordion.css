@@ -11,6 +11,10 @@
   transition: 0.4s;
 }
 
+.accordion i, span {
+  margin-right: 8px;
+}
+
 .active, .accordion:hover {
   background-color: #ccc;
 }
@@ -31,7 +35,6 @@
   padding: 0 18px;
   background-color: white;
   max-height: 0;
-  overflow: hidden;
   transition: max-height .2s ease-out;
   overflow: auto;
 }
