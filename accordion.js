@@ -1,7 +1,7 @@
 var acc = document.getElementsByClassName("accordion");
 var panels = document.getElementsByClassName("panel");
 var tab = document.getElementsByClassName("tab");
-var container = document.getElementsByClassName("container")[0];
+const containerOffSet = document.getElementsByClassName("container")[0].offsetTop;
 var i;
 
 /* 
@@ -27,12 +27,7 @@ for (i = 0; i < acc.length; i++) {
           tab[0].style.visibility = 'visible';
         } else {
           tab[0].style.visibility = 'hidden';
-
-          if(container.offsetTop) {
-            panels[j].style.maxHeight = container.offsetTop + "px";
-          } else {
-            panels[j].style.maxHeight = tab[0].offsetTop + "px";
-          }
+          panels[j].style.maxHeight = containerOffSet + "px";
         }
       }
     }

@@ -1,0 +1,47 @@
+
+.panel.code .code-field {
+  text-align: center;
+}
+
+.panel.code input {
+  font-size: 1.8em;
+  font-weight: lighter;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid lightgrey;
+  margin: 32px 0 8px;
+  padding: 8px;
+}
+
+.panel.code .action button {
+  margin: 16px 0;
+  border: none;
+  background: white;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.panel.code .material-icons {
+  font-size: 88px;
+}
+
+.panel.code .action {
+  text-align: center;
+  padding: 16px;
+}
+
+.panel.code .divider {
+  display: flex;
+  margin: 32px 8em;
+}
+
+.divider hr {
+  width: 100%;
+  border-top: 2px solid lightgrey;
+  border-radius: 5px;
+}
+
+.divider span {
+  margin: 0 16px;
+}

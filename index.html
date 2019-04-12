@@ -10,11 +10,12 @@
 <link rel="stylesheet" type="text/css" href="tab.css">
 <link rel="stylesheet" type="text/css" href="list.css">
 <link rel="stylesheet" type="text/css" href="payment.css">
+<link rel="stylesheet" type="text/css" href="drivercode.css">
 </head>
 <body>
 
 <div class="container">
-  <div class="panel veiculo" id="veiculo">
+  <div class="panel vehicle" id="vehicle">
     <div class="panel-content">
       <h6>Automóveis</h6>
       <ul>
@@ -54,7 +55,7 @@
     </div>
   </div>
 
-  <div class="panel pagamento" id="pagamento">
+  <div class="panel payment" id="payment">
     <div class="panel-content">
         <h6>Automóveis</h6>
         <ul>
@@ -79,52 +80,59 @@
     <button>Cadastrar um cartão</button>
   </div>
 
-  <div class="panel mais" id="mais">
+  <div class="panel more" id="more">
     <div class="panel-content">
-        <h6>Mais opções</h6>
-        <ul>
-          <li>
-            <button>
-              <i class="material-icons">language</i>
-              <div class="list-description-1">
-                <p>Motorista bilíngue</p>
-              </div>
-            </button>
-          </li>
-          <li>
-            <button>
-              <i class="material-icons">pets</i>
-              <div class="list-description-1">
-                <p>Transportar animal</p>
-              </div>
-            </button>
-          </li>
-          <li>
-            <button>
-              <i class="material-icons">work</i>
-              <div class="list-description-1">
-                <p>Mala grande</p>
-              </div>
-            </button>
-          </li>
-          <li>
-            <button>
-              <i class="material-icons">directions_bike</i>
-              <div class="list-description-1">
-                <p>Transporta bicicleta</p>
-              </div>
-            </button>
-          </li>
-        </ul>
+      <h6>Mais opções</h6>
+      <ul>
+        <li>
+          <button>
+            <i class="material-icons">language</i>
+            <div class="list-description-1">
+              <p>Motorista bilíngue</p>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="material-icons">pets</i>
+            <div class="list-description-1">
+              <p>Transportar animal</p>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="material-icons">work</i>
+            <div class="list-description-1">
+              <p>Mala grande</p>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="material-icons">directions_bike</i>
+            <div class="list-description-1">
+              <p>Transporta bicicleta</p>
+            </div>
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
 
-  <div class="panel codigo" id="codigo">
+  <div class="panel code" id="code">
     <div class="panel-content">
-      <h4>4 - Panel</h4>
-      <p>Lorem ipsum dolor sit amet, cons</p>
+      <h6>Código motorista</h6>
+      <div class="code-field">
+        <input type="text" name="code" placeholder="Digite o código do motorista">
+      </div>
+      <div class="divider"><hr/><span> OU </span><hr/></div>
+      <div class="action">
+        <button><i class="material-icons">center_focus_strong</i></button>
+      </div>
     </div>
   </div>
+
   <div class="menu">
     <div class="tab">
       <button class="tablinks" onclick="openCity(event, 'automovel')" id="defaultOpen">Automóvel</button>
@@ -132,10 +140,10 @@
     </div>
 
     <div id="automovel" class="tabcontent">
-      <button class="accordion" id="veiculo">Básico</button>
-      <button class="accordion" id="pagamento">Dinheiro</button>
-      <button class="accordion" id="mais">Mais opções</button>
-      <button class="accordion" id="codigo">Código motorista</button>
+      <button class="accordion" id="vehicle">Básico</button>
+      <button class="accordion" id="payment">Dinheiro</button>
+      <button class="accordion" id="more">Mais opções</button>
+      <button class="accordion" id="code">Código motorista</button>
     </div>
 
     <div id="utilitario" class="tabcontent">
