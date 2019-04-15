@@ -1,35 +1,45 @@
 var acc = document.getElementsByClassName("accordion");
 var panels = document.getElementsByClassName("panel");
 var tab = document.getElementsByClassName("tab");
-const containerOffSet = document.getElementsByClassName("container")[0].offsetTop;
-var i;
+var submit = document.getElementsByClassName("submit");
+var container = document.getElementsByClassName("container");
 
-/* 
-function topFunction() {
-  document.body.scrollTop = document.body.offsetHeight;
-  document.documentElement.scrollTop = document.documentElement.offsetHeight;
-}
-*/
+const containerOffSet = container[0].offsetTop;
+const tabHeight = tab[0].offsetHeight;
+const submitHeight = submit[0].offsetHeight;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var elementId = this.id;
 
-    for(j = 0; j< panels.length; j++) {
+    closePanel(acc, elementId, panels, tab, submit, containerOffSet, tabHeight, submitHeight);
+  });
+}
 
-      if(panels[j].id != elementId) {  
-        panels[j].style.maxHeight = null;
-        acc[j].classList.remove("active");
+function showOptions(panel, tab, submit) {
+  panel.style.maxHeight = null;
+  tab.style.display = 'flex';
+  submit.style.display = 'block';
+}
+
+function closePanel(acc, elementId, panels, tab, submit, containerH, tabH, submitH, onPanel = false) {
+  for(j = 0; j< panels.length; j++) {
+
+    if(panels[j].id != elementId) {  
+      panels[j].style.maxHeight = null;
+      acc[j].classList.remove("active");
+      if(onPanel) {
+        showOptions(panels[j], tab[0], submit[0]);
+      }
+    } else {
+      if(panels[j].style.maxHeight) {
+        showOptions(panels[j], tab[0], submit[0]);
       } else {
-        if(panels[j].style.maxHeight) {
-          panels[j].style.maxHeight = null;
-          tab[0].style.visibility = 'visible';
-        } else {
-          tab[0].style.visibility = 'hidden';
-          panels[j].style.maxHeight = containerOffSet + "px";
-        }
+        tab[0].style.display = 'none';
+        submit[0].style.display = 'none';
+        panels[j].style.maxHeight = containerH + tabH + submitH + "px";
       }
     }
-  });
+  }
 }

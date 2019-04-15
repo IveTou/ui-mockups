@@ -1,14 +1,17 @@
 .more-button {
-  outline: none;
+  border-radius: 4px;
+}
+
+.more-button.active {
+  background-color: #c6cdd9;;
 }
 
 .accordion .caption .chip {
-  background: #3d3d3d;
+  background: #424e64;
   font-size: 12px;
   border-radius: 16px;
-  padding: 5px;
+  padding: 2px 6px;
   margin: 0;
   margin-right: 4px;
   margin-top: 8px;
-
 }

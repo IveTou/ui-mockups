@@ -1,7 +1,7 @@
 .vehicle-button {
-  outline: none;
+  border-radius: 4px;
 }
 
-.vehicle-button .active {
-  background-color: blueviolet;
+.vehicle-button.active {
+  background-color: #c6cdd9;;
 }

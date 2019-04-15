@@ -1,6 +1,4 @@
 .accordion {
-  background-color: #eee;
-  color: #444;
   width: 100%;
   outline: none;
   font-size: 15px;
@@ -11,7 +9,6 @@
   border: none;
   text-align: left;
   cursor: pointer;
-  margin: 4px;
   padding: 8px;
 }
 
@@ -33,18 +30,16 @@
 
 .accordion i, span {
   margin: 0 8px;
-  vertical-align: middle;
-  display: inline-flex;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #000015;
   outline: none;
 }
 
 .tabcontent .accordion:after {
   content: '\002B';
-  color: #777;
+  color: white;
   font-weight: bold;
   float: right;
   margin: 16px;
@@ -55,11 +50,12 @@
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 8px;
   background-color: white;
   max-height: 0;
   transition: max-height .2s ease-out;
   overflow: hidden;
+  margin-bottom: 4px;
 }
 
 .panel::-webkit-scrollbar {

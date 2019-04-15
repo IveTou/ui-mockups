@@ -10,6 +10,7 @@ body {
   bottom: 0;
   left: 0;
   overflow: hidden;
+  color: #000015;
 }
 
 .container {
@@ -19,4 +20,25 @@ body {
   width: 100%;
   max-height: 100%;
   overflow: hidden;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+.submit button {
+  background-color: #26c5c3;
+  color: white;
+}
+
+h6 {
+  color: #000015;
 }
