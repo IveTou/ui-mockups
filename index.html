@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="list.css">
 <link rel="stylesheet" type="text/css" href="payment.css">
 <link rel="stylesheet" type="text/css" href="drivercode.css">
+<link rel="stylesheet" type="text/css" href="vehicle.css">
 </head>
 <body>
 
@@ -20,33 +21,73 @@
       <h6>Automóveis</h6>
       <ul>
         <li>
-          <button>
-            <img 
-              src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg?w968h681"
-              alt="Avatar"
-              class="list-avatar"
-            >
-            <div class="list-description-1">
+          <button class="vehicle-button" id="basico">
+            <i class="material-icons">directions_car</i>
+            <div class="list-description">
               <p>Básico</p>
               <p class="caption">Distância/Tempo</p>
             </div>
-            <div class="list-description-2">
+            <div class="price">
               <span>R$ 23,00</span>
             </div>
           </button>
         </li>
         <li>
-          <button>
-            <img 
-              src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg?w968h681"
-              alt="Avatar"
-              class="list-avatar"
-            >
-            <div class="list-description-1">
-              <p>Básico</p>
+          <button class="vehicle-button"  id="especial">
+            <i class="material-icons">directions_car</i>
+            <div class="list-description">
+              <p>Especial</p>
               <p class="caption">Distância/Tempo</p>
             </div>
-            <div class="list-description-2">
+            <div class="price">
+              <span>R$ 23,00</span>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="vehicle-button" id="luxo">
+            <i class="material-icons">directions_car</i>
+            <div class="list-description">
+              <p>Luxo</p>
+              <p class="caption">Distância/Tempo</p>
+            </div>
+            <div class="price">
+              <span>R$ 23,00</span>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="vehicle-button" id="blindado">
+            <i class="material-icons">directions_car</i>
+            <div class="list-description">
+              <p>Blindado</p>
+              <p class="caption">Distância/Tempo</p>
+            </div>
+            <div class="price">
+              <span>R$ 23,00</span>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="vehicle-button" id="taxi">
+            <i class="material-icons">directions_car</i>
+            <div class="list-description">
+              <p>Táxi</p>
+              <p class="caption">Distância/Tempo</p>
+            </div>
+            <div class="price">
+              <span>R$ 23,00</span>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="vehicle-button" id="moto">
+            <i class="material-icons">motorcycle</i>
+            <div class="list-description">
+              <p>Moto</p>
+              <p class="caption">Distância/Tempo</p>
+            </div>
+            <div class="price">
               <span>R$ 23,00</span>
             </div>
           </button>
@@ -62,7 +103,7 @@
           <li>
             <button>
               <i class="material-icons">payment</i>
-              <div class="list-description-1">
+              <div class="list-description">
                 <p>Dinheiro</p>
               </div>
             </button>
@@ -70,7 +111,7 @@
           <li>
             <button>
               <i class="material-icons">money</i>
-              <div class="list-description-1">
+              <div class="list-description">
                 <p>Cartão</p>
               </div>
             </button>
@@ -87,7 +128,7 @@
         <li>
           <button>
             <i class="material-icons">language</i>
-            <div class="list-description-1">
+            <div class="list-description">
               <p>Motorista bilíngue</p>
             </div>
           </button>
@@ -95,7 +136,7 @@
         <li>
           <button>
             <i class="material-icons">pets</i>
-            <div class="list-description-1">
+            <div class="list-description">
               <p>Transportar animal</p>
             </div>
           </button>
@@ -103,7 +144,7 @@
         <li>
           <button>
             <i class="material-icons">work</i>
-            <div class="list-description-1">
+            <div class="list-description">
               <p>Mala grande</p>
             </div>
           </button>
@@ -111,7 +152,7 @@
         <li>
           <button>
             <i class="material-icons">directions_bike</i>
-            <div class="list-description-1">
+            <div class="list-description">
               <p>Transporta bicicleta</p>
             </div>
           </button>
@@ -141,7 +182,16 @@
     </div>
 
     <div id="automovel" class="tabcontent">
-      <button class="accordion" id="vehicle"><i class="material-icons">directions_car</i><span>Básico</span></button>
+      <button class="accordion" id="vehicle">
+        <i class="material-icons">directions_car</i>
+        <div class="list-description">
+          <p>Básico</p>
+          <p class="caption">Distância/Tempo</p>
+        </div>
+        <div class="price">
+          <span>R$ 23,00</span>
+        </div>
+      </button>
       <button class="accordion" id="payment"><i class="material-icons">monetization_on</i><span>Dinheiro</span></button>
       <button class="accordion" id="more"><i class="material-icons">menu</i><span>Mais opções</span></button>
       <button class="accordion" id="code"><i class="material-icons">center_focus_strong</i><span>Código motorista</span></button>
@@ -155,6 +205,7 @@
 </div>
 
 <script src="tab.js"></script>
-<script src="accordion.js"></script>   
+<script src="accordion.js"></script>
+<script src="vehicle.js"></script>  
 </body>
 </html> 
