@@ -69,10 +69,10 @@
           </button>
         </li>
         <li>
-          <button class="vehicle-button" id="taxi">
+          <button class="vehicle-button" id="blindado">
             <i class="material-icons">directions_car</i>
-            <div class="description">
-              <p>Táxi</p>
+            <div>
+              <p class="description">Táxi</p>
               <p class="caption">Distância/Tempo</p>
             </div>
             <div class="price">
@@ -101,18 +101,20 @@
         <h6>Automóveis</h6>
         <ul>
           <li>
-            <button>
-              <i class="material-icons">payment</i>
+            <button class="payment-button" id="cash">
+              <i class="material-icons">money</i>
               <div>
                 <p class="description">Dinheiro</p>
+                <p class="caption"></p>
               </div>
             </button>
           </li>
           <li>
-            <button>
-              <i class="material-icons">money</i>
+            <button class="payment-button" id="credit">
+              <i class="material-icons">payment</i>
               <div>
                 <p class="description">Cartão</p>
+                <p class="caption">final ...5654</p>
               </div>
             </button>
           </li>
@@ -192,9 +194,15 @@
           <span>R$ 23,00</span>
         </div>
       </button>
-      <button class="accordion" id="payment"><i class="material-icons">monetization_on</i><span>Dinheiro</span></button>
-      <button class="accordion" id="more"><i class="material-icons">menu</i><span>Mais opções</span></button>
-      <button class="accordion" id="code"><i class="material-icons">center_focus_strong</i><span>Código motorista</span></button>
+      <button class="accordion" id="payment">
+        <i class="material-icons">monetization_on</i>
+        <div>
+            <p class="description">Pagamento</p>
+            <p class="caption"></p>
+          </div>
+      </button>
+      <button class="accordion" id="more"><i class="material-icons">menu</i><div>Mais opções</div></button>
+      <button class="accordion" id="code"><i class="material-icons">center_focus_strong</i><div>Código motorista</div></button>
     </div>
 
     <div id="utilitario" class="tabcontent">
@@ -206,6 +214,7 @@
 
 <script src="tab.js"></script>
 <script src="accordion.js"></script>
-<script src="vehicle.js"></script>  
+<script src="vehicle.js"></script>
+<script src="payment.js"></script>
 </body>
 </html> 

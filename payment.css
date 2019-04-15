@@ -1,4 +1,4 @@
-.panel.payment >button {
+.panel.payment > button {
   width: 100%;
   margin: 16px 0;
   border: none;
@@ -10,4 +10,24 @@
   left: 0;
   bottom: 0;
   cursor: pointer;
+}
+
+.payment-button {
+  outline: none;
+}
+
+.payment-button div {
+  display: flex;
+}
+
+.payment-button div p:first-child {
+  flex-grow: 1;
+}
+
+.accordion#payment > div {
+  display: flex;
+}
+
+.accordion#payment > div p:first-child {
+  flex-grow: 1;
 }
