@@ -1,0 +1,14 @@
+.more-button {
+  outline: none;
+}
+
+.accordion .caption .chip {
+  background: #3d3d3d;
+  font-size: 12px;
+  border-radius: 16px;
+  padding: 5px;
+  margin: 0;
+  margin-right: 4px;
+  margin-top: 8px;
+
+}

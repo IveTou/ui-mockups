@@ -28,6 +28,7 @@
   font-size: 13px;
   color: grey;
   margin: 0;
+  display: inline-flex;
 }
 
 .accordion i, span {

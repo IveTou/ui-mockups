@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="payment.css">
 <link rel="stylesheet" type="text/css" href="drivercode.css">
 <link rel="stylesheet" type="text/css" href="vehicle.css">
+<link rel="stylesheet" type="text/css" href="more.css">
 </head>
 <body>
 
@@ -128,7 +129,7 @@
       <h6>Mais opções</h6>
       <ul>
         <li>
-          <button>
+          <button class="more-button" id="bilingue">
             <i class="material-icons">language</i>
             <div>
               <p class="description">Motorista bilíngue</p>
@@ -136,7 +137,7 @@
           </button>
         </li>
         <li>
-          <button>
+          <button class="more-button" id="pets">
             <i class="material-icons">pets</i>
             <div>
               <p class="description">Transportar animal</p>
@@ -144,7 +145,7 @@
           </button>
         </li>
         <li>
-          <button>
+          <button class="more-button" id="malagrande">
             <i class="material-icons">work</i>
             <div>
               <p class="description">Mala grande</p>
@@ -152,7 +153,7 @@
           </button>
         </li>
         <li>
-          <button>
+          <button class="more-button" id="bicicleta">
             <i class="material-icons">directions_bike</i>
             <div>
               <p class="description">Transporta bicicleta</p>
@@ -197,11 +198,17 @@
       <button class="accordion" id="payment">
         <i class="material-icons">monetization_on</i>
         <div>
-            <p class="description">Pagamento</p>
-            <p class="caption"></p>
-          </div>
+          <p class="description">Pagamento</p>
+          <p class="caption"></p>
+        </div>
       </button>
-      <button class="accordion" id="more"><i class="material-icons">menu</i><div>Mais opções</div></button>
+      <button class="accordion" id="more">
+        <i class="material-icons">menu</i>
+        <div>
+          <p class="description">Mais opções</p>
+          <p class="caption"></p>
+        </div>
+      </button>
       <button class="accordion" id="code"><i class="material-icons">center_focus_strong</i><div>Código motorista</div></button>
     </div>
 
@@ -216,5 +223,6 @@
 <script src="accordion.js"></script>
 <script src="vehicle.js"></script>
 <script src="payment.js"></script>
+<script src="more.js"></script>
 </body>
 </html> 
