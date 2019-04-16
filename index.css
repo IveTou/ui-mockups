@@ -41,4 +41,12 @@ button {
 
 h6 {
   color: #000015;
+  display: flex;
+  justify-content: space-between;
+}
+
+h6 i.material-icons {
+  cursor: pointer;
+  font-size: 40px;
+  margin-top: -24px;
 }

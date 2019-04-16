@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="drivercode.css">
 <link rel="stylesheet" type="text/css" href="vehicle.css">
 <link rel="stylesheet" type="text/css" href="more.css">
-<link rel="stylesheet" type="text/css" href="utility.css">
+<link rel="stylesheet" type="text/css" href="utlity.css">
 
 </head>
 <body>
@@ -128,7 +128,7 @@
 
   <div class="panel more" id="more">
     <div class="panel-content">
-      <h6>Mais opções</h6>
+      <h6>Mais opções<i class="material-icons" onclick="closeParentPanel(event, 'more')">close</i></h6>
       <ul>
         <li>
           <button class="more-button" id="bilingue">
@@ -168,7 +168,7 @@
 
   <div class="panel code" id="code">
     <div class="panel-content">
-      <h6>Código motorista</h6>
+      <h6>Código motorista<i class="material-icons" onclick="closeParentPanel(event, 'code')">close</i></h6>
       <div class="code-field">
         <input type="text" name="code" placeholder="Digite o código do motorista">
       </div>
