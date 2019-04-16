@@ -13,6 +13,8 @@
 <link rel="stylesheet" type="text/css" href="drivercode.css">
 <link rel="stylesheet" type="text/css" href="vehicle.css">
 <link rel="stylesheet" type="text/css" href="more.css">
+<link rel="stylesheet" type="text/css" href="utility.css">
+
 </head>
 <body>
 
@@ -184,7 +186,7 @@
       <button class="tablinks" onclick="openCity(event, 'utilitario')">Utilitário</button>
     </div>
 
-    <div id="automovel" class="tabcontent">
+    <div id="automovel" class="tabcontent vehicle">
       <button class="accordion" id="vehicle">
         <i class="material-icons">directions_car</i>
         <div>
@@ -212,9 +214,57 @@
       <button class="accordion" id="code"><i class="material-icons">center_focus_strong</i><div>Código motorista</div></button>
     </div>
 
-    <div id="utilitario" class="tabcontent">
-      <h3>Coisas do utilitário</h3>
-      <p>...</p> 
+    <div id="utilitario" class="tabcontent utility">
+      <ul>
+        <li>
+          <button class="utility-button" id="van">
+            <i class="material-icons">directions_car</i>
+            <div>
+              <p class="description">Van</p>
+              <p class="caption">Distância/Tempo</p>
+            </div>
+            <div class="price">
+              <span>R$ 23,00</span>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="utility-button" id="carreto">
+            <i class="material-icons">directions_car</i>
+            <div>
+              <p class="description">Carreto</p>
+              <p class="caption">Distância/Tempo</p>
+            </div>
+            <div class="price">
+              <span>R$ 23,00</span>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="utility-button" id="ambulancia">
+            <i class="material-icons">directions_car</i>
+            <div>
+              <p class="description">Ambulância</p>
+              <p class="caption">Distância/Tempo</p>
+            </div>
+            <div class="price">
+              <span>R$ 23,00</span>
+            </div>
+          </button>
+        </li>
+        <li>
+          <button class="utility-button" id="carroforte">
+            <i class="material-icons">directions_car</i>
+            <div>
+              <p class="description">Carro forte</p>
+              <p class="caption">Distância/Tempo</p>
+            </div>
+            <div class="price">
+              <span>R$ 23,00</span>
+            </div>
+          </button>
+        </li>
+      </ul>
     </div>
     <div class="submit">
       <button>CONFIRMAR</button>
@@ -227,5 +277,6 @@
 <script src="vehicle.js"></script>
 <script src="payment.js"></script>
 <script src="more.js"></script>
+<script src="utility.js"></script>
 </body>
 </html> 

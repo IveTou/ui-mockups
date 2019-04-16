@@ -37,7 +37,7 @@
   outline: none;
 }
 
-.tabcontent .accordion:after {
+.tabcontent.vehicle .accordion:after {
   content: '\002B';
   color: white;
   font-weight: bold;
@@ -45,7 +45,7 @@
   margin: 16px;
 }
 
-.tabcontent .active:after {
+.tabcontent.vehicle .active:after {
   content: "\2212";
 }
 

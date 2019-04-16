@@ -1,5 +1,4 @@
 var options = document.getElementsByClassName("more-button");
-var accNodes = document.getElementsByClassName("accordion");
 
 for (i = 0; i < options.length; i++) {
   options[i].addEventListener("click", function() {
@@ -7,13 +6,13 @@ for (i = 0; i < options.length; i++) {
     var elementId = this.id;
     var childNodes = this.childNodes;
 
-    for(j=0; j < accNodes.length; j++) {
-      if(accNodes[j].id == 'more') {
-        var childNodes = accNodes[j].getElementsByClassName("caption")[0].childNodes;
+    for(j=0; j < acc.length; j++) {
+      if(acc[j].id == 'more') {
+        var childNodes = acc[j].getElementsByClassName("caption")[0].childNodes;
 
         for(k = 0; k < childNodes.length; k++) {
           if(childNodes[k].id == elementId) {
-            accNodes[j].getElementsByClassName("caption")[0].removeChild(childNodes[k]);
+            acc[j].getElementsByClassName("caption")[0].removeChild(childNodes[k]);
             return null;
           }
         }
@@ -29,7 +28,7 @@ for (i = 0; i < options.length; i++) {
         node.setAttributeNode(cls);
         node.innerHTML = elementId;
         
-        accNodes[j].getElementsByClassName("caption")[0].appendChild(node);
+        acc[j].getElementsByClassName("caption")[0].appendChild(node);
       }
     }
   });
