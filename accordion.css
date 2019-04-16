@@ -1,4 +1,4 @@
-.accordion {
+.menuoptions .accordion {
   width: 100%;
   outline: none;
   font-size: 15px;
@@ -12,32 +12,32 @@
   padding: 8px;
 }
 
-.accordion div {
+.menuoptions .accordion div {
   flex-grow: 1;
   margin: 8px 16px;
 }
 
-.accordion .price {
+.menuoptions .accordion .price {
   text-align: right;
 }
 
-.accordion .caption {
+.menuoptions .accordion .caption {
   font-size: 13px;
   color: grey;
   margin: 0;
   display: inline-flex;
 }
 
-.accordion i, span {
+.menuoptions .accordion i, span {
   margin: 0 8px;
 }
 
-.active, .accordion:hover {
+.menuoptions .active, .accordion:hover {
   background-color: #000015;
   outline: none;
 }
 
-.tabcontent.vehicle .accordion:after {
+.menuoptions .tabcontent.vehicle .accordion:after {
   content: '\002B';
   color: white;
   font-weight: bold;
@@ -45,11 +45,11 @@
   margin: 16px;
 }
 
-.tabcontent.vehicle .active:after {
+.menuoptions .tabcontent.vehicle .active:after {
   content: "\2212";
 }
 
-.panel {
+.container .panel {
   padding: 0 8px;
   background-color: white;
   max-height: 0;
@@ -58,11 +58,11 @@
   margin-bottom: 4px;
 }
 
-.panel::-webkit-scrollbar {
+.container .panel::-webkit-scrollbar {
   display: none;
 }
 
-.panel-content {
+.container .panel-content {
   /*height: 445px;*/
   max-height: 100%;
   height: -webkit-fill-available;
@@ -71,6 +71,6 @@
   color: grey;
 }
 
-.panel-content::-webkit-scrollbar { 
+.container .panel-content::-webkit-scrollbar { 
   display: none; 
 }

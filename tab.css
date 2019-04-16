@@ -39,18 +39,18 @@ accent: #fff;
 }
 
 /* Style the tab content */
-.tabcontent {
+.menuoptions .tabcontent {
   display: none;
   padding: 6px 0;
   -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
 }
 
-.tabcontent#automovel, .tabcontent#utilitario {
+.menuoptions .tabcontent#automovel, .tabcontent#utilitario {
   background-color: #19263a;
 }
 
-.tabcontent#automovel button, .tabcontent#utilitario button {
+.menuoptions .tabcontent#automovel button, .tabcontent#utilitario button {
   color: white;
 }
 

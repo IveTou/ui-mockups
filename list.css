@@ -1,10 +1,10 @@
-ul {
+.container ul {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 40px;
 }
 
-li button {
+.container li button {
   flex-grow: 1;
   display: flex;
   background: transparent;
@@ -15,31 +15,31 @@ li button {
   padding: 8px;
 }
 
-li {
+.container li {
   display: flex;
   text-align: left;
 }
 
-p {
+.container p {
   margin: 0;
 }
 
-li div {
+.container li div {
   flex-grow: 1;
   margin: 8px 16px;
 }
 
-.price {
+.container .price {
   text-align: right;
 }
 
-.caption {
+.container .caption {
   font-size: 13px;
   color: grey;
   margin: 0;
 }
 
-.list-avatar {
+.container .list-avatar {
   vertical-align: middle;
   width: 3em;
   height: 3em;

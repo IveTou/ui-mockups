@@ -1,16 +1,30 @@
+/*wrapper adequacy*/
+#Itmov {
+  height: 100% !important;
+}
+
+#searchArea.confirm-send ~ #routeSender {
+  display: none;
+}
+
+body #obs {
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  background-color: transparent;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  color: #000015;
+}
+
+/*styling*/
 body, * {
   font-family:  "RobotoDraft", "Roboto", sans-serif;
   font-size: 14px;
-}
-
-body {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  color: #000015;
 }
 
 .container {
@@ -34,18 +48,18 @@ button {
   background-color: transparent;
 }
 
-.submit button {
+.container .submit button {
   background-color: #26c5c3;
   color: white;
 }
 
-h6 {
+.container h6 {
   color: #000015;
   display: flex;
   justify-content: space-between;
 }
 
-h6 i.material-icons {
+.container h6 i.material-icons {
   cursor: pointer;
   font-size: 40px;
   margin-top: -24px;

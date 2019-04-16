@@ -1,12 +1,12 @@
-.more-button {
+.panel-content .more-button {
   border-radius: 4px;
 }
 
-.more-button.active {
+.panel-content .more-button.active {
   background-color: #c6cdd9;;
 }
 
-.accordion .caption .chip {
+.tabcontent .accordion .caption .chip {
   background: #424e64;
   font-size: 12px;
   border-radius: 16px;

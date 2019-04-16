@@ -12,26 +12,26 @@
   cursor: pointer;
 }
 
-.payments-button {
+.panel.payments .payments-button {
   border-radius: 4px;
 }
 
-.payments-button.active {
+.panel.payments .payments-button.active {
   background-color: #c6cdd9;;
 }
 
-.payments-button div {
+.panel.payments .payments-button div {
   display: flex;
 }
 
-.payments-button div p:first-child {
+.panel.payments .payments-button div p:first-child {
   flex-grow: 1;
 }
 
-.accordion#payments > div {
+.tabcontent .accordion#payments > div {
   display: flex;
 }
 
-.accordion#payments > div p:first-child {
+.tabcontent  .accordion#payments > div p:first-child {
   flex-grow: 1;
 }

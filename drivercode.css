@@ -37,12 +37,12 @@
   margin: 32px 8em;
 }
 
-.divider hr {
+.panel.code .divider hr {
   width: 100%;
   border-top: 2px solid lightgrey;
   border-radius: 5px;
 }
 
-.divider span {
+.panel.code .divider span {
   margin: 0 16px;
 }
