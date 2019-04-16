@@ -1,0 +1,21 @@
+#Itmov {
+    height: 100% !important;
+}
+
+#searchArea.confirm-send ~ #routeSender {
+    display: none;
+}
+
+body #obs {
+	left: 0;
+	bottom: 0 !important;
+	width: 100% !important;
+	background-color: transparent;
+	height: 100%;
+	margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*
+.menu -> menuoptions
+*/
