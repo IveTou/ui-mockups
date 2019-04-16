@@ -1,4 +1,4 @@
-.panel.payment > button {
+.panel.payments > button {
   width: 100%;
   margin: 16px 0;
   border: none;
@@ -12,26 +12,26 @@
   cursor: pointer;
 }
 
-.payment-button {
+.payments-button {
   border-radius: 4px;
 }
 
-.payment-button.active {
+.payments-button.active {
   background-color: #c6cdd9;;
 }
 
-.payment-button div {
+.payments-button div {
   display: flex;
 }
 
-.payment-button div p:first-child {
+.payments-button div p:first-child {
   flex-grow: 1;
 }
 
-.accordion#payment > div {
+.accordion#payments > div {
   display: flex;
 }
 
-.accordion#payment > div p:first-child {
+.accordion#payments > div p:first-child {
   flex-grow: 1;
 }
