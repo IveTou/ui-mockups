@@ -42,8 +42,8 @@ accent: #fff;
 .menuoptions .tabcontent {
   display: none;
   padding: 6px 0;
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
+  /* -webkit-animation: fadeEffect .1s;
+  animation: fadeEffect .1s; */
 }
 
 .menuoptions .tabcontent#automovel, .tabcontent#utilitario {

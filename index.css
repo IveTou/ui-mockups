@@ -10,16 +10,17 @@
 body #obs {
   left: 0 !important;
   bottom: 0 !important;
-  width: 100% !important;
-  background-color: transparent;
-  height: 100%;
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 100%;
-  position: absolute;
+  width: 100% !important;/**/
+  background-color: transparent !important;;
+  height: 100% !important;;
+  margin: 0 !important;/**/
+  padding: 0 !important;/**/
   overflow: hidden;
-  color: #000015;
+  border-top: none !important;
+  color: unset !important;
+  position: absolute !important;
 }
+
 
 /*styling*/
 body, * {
@@ -46,6 +47,7 @@ button {
   text-align: center;
   width: 100%;
   background-color: transparent;
+  align-items: center;
 }
 
 .container .submit button {

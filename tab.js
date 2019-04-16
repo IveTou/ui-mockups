@@ -1,5 +1,3 @@
-document.getElementById("defaultOpen").click();
-
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -11,5 +9,12 @@ function openCity(evt, cityName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+  if(evt.currentTarget) {
+    evt.currentTarget.className += " active";
+  } else {
+    evt.className += " active";
+  }
 }
+
+var vehi = document.getElementById("defaultOpen");
+openCity(vehi, 'automovel');
