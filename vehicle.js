@@ -13,6 +13,12 @@ for (i = 0; i < vehicles.length; i++) {
       }
     }
 
+    for(j=0; j < vehicles.length; j++) {
+      if(vehicles[j].id !== elementId) {
+        vehicles[j].classList.remove("active");
+      }
+    }
+
     closePanel(acc, elementId, panels, tab, submit, containerOffSet, tabHeight, submitHeight, true);
   });
 }

@@ -12,6 +12,12 @@ for (i = 0; i < payments.length; i++) {
       }
     }
 
+    for(j=0; j < payments.length; j++) {
+      if(payments[j].id !== elementId) {
+        payments[j].classList.remove("active");
+      }
+    }
+
     closePanel(acc, elementId, panels, tab, submit, containerOffSet, tabHeight, submitHeight, true);
   });
 }
