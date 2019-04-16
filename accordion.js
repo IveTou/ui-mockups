@@ -1,6 +1,6 @@
 var acc = document.getElementsByClassName("accordion");
 var panels = document.getElementsByClassName("panel");
-var tab = document.getElementsByClassName("tab");
+var tab = document.getElementsByClassName("tabheader");
 var submit = document.getElementsByClassName("submit");
 var container = document.getElementsByClassName("container");
 

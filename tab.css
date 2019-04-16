@@ -5,13 +5,13 @@ accent: #fff;
 */
 
 /* Style the tab */
-.tab {
+.tabheader {
   overflow: hidden;
   display: flex;
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.tabheader button {
   font-size: 16px;
   background-color: #f1f1f1;
   border: none;
@@ -21,19 +21,19 @@ accent: #fff;
   margin-left: -40px;
 }
 
-.tab button#defaultOpen {
+.tabheader button#defaultOpen {
   border-radius: 1px 50px 1px 1px;
   margin-left: 0;
   color: white;
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tabheader button:hover {
   background-color: #000015#19263a;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tabheader button.active {
   background-color: #19263a;
   z-index: 1;
 }
